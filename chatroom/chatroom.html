@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html><head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>JS chatroom</title>
+  <center><h1 class = "yellow shadow">Ra's chatroom</h1></center>
+  <style>
+  div {
+    border-radius: 5px;
+    background-color: #ffff66;
+    padding: 20px;
+  }
+  </style>
+  <div>
+    <form id="myform" action="" method="">
+        <input placeholder="name" type="text" name="im1" value="name: Annonymus" />
+        <input type="text" name="im2" value="message: " />
+        <input type="reset" value="Reset">
+        <input type="button" name="submit" id="submit" value="send" />
+    </form></div>
+    <div id="values"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"> </script>
+</head>
+<body>
+<script>
+  console.log(name);
+  $(function(){
+    $("#submit").on('click',function(){
+        var myvalue ='';
+        var $myform = $('#myform :input');
+        console.log($myform);
+        $myform.each(function(){
+           myvalue += $(this).val()+"<br>";
+        });
+        console.log(myvalue);
+      $('#values').html(myvalue);
+    });
+});
+</script>
+</body> </html>
