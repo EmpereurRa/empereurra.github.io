@@ -1,0 +1,78 @@
+\documentclass[12px]{article}
+
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage[margin=1.25in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[backend=bibtex, style=numeric, sorting=none]{biblatex}
+\addbibresource{references.bib}
+
+\titleformat{\section}{\huge\bfseries}{\thesection}{.25em}{}[\titlerule]
+\titleformat{\subsection}{\bfseries\Large}{\hspace{-.25in}$\bullet$}{0em}{}
+\titleformat{\subsubsection}[runin]{\bfseries}{}{0em}{}[---]
+\titlespacing{\subsubsection}
+{1em}{.25em}{1em}
+
+\title{States of Matter and interesting variables}
+\author{Ra}
+
+\newcommand{\aparagraph}[1]{\paragraph{#1}\mbox{}\\}
+
+\renewcommand{\maketitle}{
+        \begin{center}
+
+        {\huge\bfseries \thetitle}
+        \newline
+
+        \vspace{.25em}
+
+        \end{center}
+}
+
+\begin{document}
+  \maketitle
+  \begin{center}
+	  \begin{tabular}{|c|c|c|c|c|}
+	  \hline
+		  \textbf{Object} & \textbf{State of Matter} & \textbf{Average Time to Live} & \textbf{Climate}  & \textbf{Object Cost} \\
+	  \hline
+		  Water vapor & Gas &  not appliable & (usually) hot & not applicable \\
+	  \hline
+		  orange juice & liquid & 1-3 days \parencite{orangejuicelife} & any & 2.89\$/KG \parencite{orangejuicecost}  \\
+	  \hline
+		  a house's walls & solid & ~100 years \parencite{glasslife} & any & Bricks: 56\$–330\$/m2 \parencite{wallcost} \\
+	  \hline
+		  Fire & Plasma* & a few hours & any & cost of materials used \\
+	  \hline
+		  Glass & Solid* & 15 years \parencite{glasslife} & any & 10\$/square foot \parencite{glasscost} \\
+	  \hline
+
+          \end{tabular}
+  \end{center}
+
+\aparagraph{I Object: \\
+- The Object described by the other fields}
+\aparagraph{II State of Matter notes: \\
+We will use the following states of matter for this research: \\
+   a) Solid: Closely packed particles  with strong inter-molecular forces leading to particles able to only vibrate but not move freely. A solid has a stable, definite shape and a definite volume \parencite{solids}; \\
+   b) Liquid: A liquid is a nearly incompressible fluid that conforms to the shape of its container but retains a (nearly) constant volume independent of pressure \parencite{liquids}; \\
+   c) Gas: a compressible fluid. Not only will a gas conform to the shape of its container but it will also expand to fill the container \parencite{gases} ; \\
+   d) Plasma: Ionized gaz with electrons \parencite{plasma}. }
+\aparagraph{III Average Time to Live: \\
+   - Average living time for an object, living time = time existing in a form that is not decomposed or altered beyond resemblence of the original object.}
+\aparagraph{IV Climate notes: \\
+1. for usage of x object at specific temperatures we will use the following notation: \\
+   a) very cold = average temperature of place of usage under -10 degrees Celsius; \\
+   b) cold = average temperature of place of usage from -10 degrees to 10 degrees Celsius; \\
+   c) medium = average temperature of place of usage is from 10 degrees to 25 degrees Celsius; \\
+   d) hot = average temperature of place of usage is from 25 degrees to 40 degrees. \\
+2. for something used at least in temperatures from -20 degrees Celsius to 40 degrees Celsius we will use the notation "any".}
+\aparagraph{V Object cost:  \\
+   - Average cost of an object worldwide.}
+\aparagraph{*notes: \\
+ 1. Fire is either considered a low-level plasma or a lightly ionized gas. \parencite{firedef}; \\
+ 2. Glass is a non-crystaline (it lacks long-range symmetry in it's system of particles, that which is characteristic of a crystal) solid that is sometimes considered to be a liquid due to its lack of a first-order phase transition where certain thermodynamic variables are discontinuous through the glass transition range. \parencite {glassdef} }
+
+\printbibliography
+
+\end{document}
