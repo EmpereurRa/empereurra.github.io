@@ -1,0 +1,98 @@
+/*
+Contents:
+
+1. Typography, General styling (utility classes like txtcenter, body styling, etc.).
+
+2. split area
+
+3. footer
+
+4. navbar styles.
+
+*/
+
+:root{
+	--clr-rss: #FF8900;
+
+  --fs-title: clamp(1.1rem, 3vw + 0.01rem, 1.5rem);
+  --fs-main: clamp(1rem, 2vw + 0.01rem, 1.4rem);
+}
+
+html{
+  height: 100%;
+}
+
+body{
+  width: 93%;
+  margin: 0 auto;
+  word-wrap: break-word;
+  min-height: 100%;
+  font-size: var(--fs-main);
+  display: flex;
+  flex-direction: column;
+}
+
+main{
+  width: min(90%, 50ch);
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  border: 1px solid black;
+  padding: 1rem;
+  padding-bottom: 0.5rem;
+  border-radius: 5%;
+
+}
+
+.txtcenter{
+  text-align: center;
+}
+
+header{
+  font-size: var(--fs-title);
+  padding: 0.5rem 0;
+}
+
+.split{
+  display: flex;
+  flex-direction: column;
+}
+
+a{
+  text-decoration: none;
+  list-style: none;
+  color: white;
+}
+
+a:hover{
+  color: gray;
+}
+
+@media(min-width: 40em){
+  .split{
+    flex-direction: row;
+  }
+  .split > * {
+    flex-basis: 100%;
+  }
+  .split > * + *{
+    margin-left: 2rem;
+  }
+}
+
+footer{
+  margin-top: auto;
+  padding-top: 2rem;
+}
+
+ul{
+  background-color: purple;
+  border: 2px solid red;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 10%;
+}
+
+.rss{
+	fill: var(--clr-rss);
+	border-radius: 25%;
+}

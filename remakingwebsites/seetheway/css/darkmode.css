@@ -1,0 +1,48 @@
+:root{
+  --clr-links-primary: #40E0D0;
+	--clr-links-hover: #11FF00;
+  --clr-maincontainerbg: #585858;
+}
+
+body{
+  color: white;
+  background-color: black;
+}
+
+a{
+  color: var(--clr-links-primary);
+}
+
+a:hover{
+  color: var(--clr-links-hover);
+}
+
+a:active{
+  color: lightgreen;
+}
+
+.rss{
+  background-color: white;
+}
+
+ul p a{
+  /*
+  customization opportunity:
+
+  you can add styling here if you want
+  to customize special styling for the
+  members (that's how I will call them)
+  of the list of "writings" or need to know
+  what you can use in a media query to switch
+  the display to a button like inline-block,
+  which would if you add some general styling here
+  in this very place make it similar to Luke's
+  navbar on the left of his website on big screens'
+  state when on small screens, with the "members"
+  of his list looking like buttons. */
+}
+
+main{
+  background-color: var(--clr-maincontainerbg);
+  border: 2px solid green;
+}
